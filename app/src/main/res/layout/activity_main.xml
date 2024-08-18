@@ -22,20 +22,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <SearchView
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
+                android:padding="5dp"
                 android:layout_marginEnd="16dp"
+                android:background="@drawable/background2"
                 android:queryHint="Search City"
-                android:background="@drawable/background2" />
+                android:iconifiedByDefault="false"/>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/currentWeatherDiscription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="96dp"
+                android:layout_marginTop="80dp"
                 android:fontFamily="@font/segoe_ui"
                 android:text="Mostly Cloudy"
                 android:textAlignment="center"
@@ -47,14 +50,14 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 app:srcCompat="@drawable/cloudy_sunny" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/segoe_ui"
                 android:text="Sun March 10 | 5:00 PM"
                 android:textAlignment="center"
@@ -62,18 +65,19 @@
                 android:textSize="19sp" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/currentTemperature"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
                 android:fontFamily="@font/segoe_ui"
-                android:text="25°"
+                android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="63sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/highTemperature"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/segoe_ui"
@@ -85,7 +89,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/background2"
                 android:baselineAligned="false"
                 android:orientation="horizontal"
@@ -108,7 +115,7 @@
                         app:srcCompat="@drawable/rain" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/currentRain"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/segoe_ui_bold"
@@ -144,7 +151,7 @@
                         app:srcCompat="@drawable/wind" />
 
                     <TextView
-                        android:id="@+id/textView7"
+                        android:id="@+id/currentWindSpeed"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/segoe_ui_bold"
@@ -180,7 +187,7 @@
                         app:srcCompat="@drawable/humidity" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/currentHumidity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/segoe_ui_bold"
